@@ -1,13 +1,13 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "palette": {
-        "os": "#ACB0BE",
-        "pink": "#F5BDE6",
-        "lavender": "#B7BDF8",
-        "blue":  "#8AADF4",
-        "wight": "#FFFFFF",
-        "text": "#494D64",
-        "green": "#a6d189"
+    "os": "#ACB0BE",
+    "pink": "#F5BDE6",
+    "lavender": "#B7BDF8",
+    "blue": "#8AADF4",
+    "wight": "#FFFFFF",
+    "text": "#494D64",
+    "green": "#a6d189"
   },
   "blocks": [
     {
@@ -46,12 +46,12 @@
         {
           "background": "#a6d189",
           "background_templates": [
-            "{{ if and (.Working.Changed) (not .Staging.Changed) }}#fab387{{ end }}",     
-            "{{ if and (.Staging.Changed) (not .Working.Changed) }}#eebebe{{ end }}",      
-            "{{ if and (.Working.Changed) (.Staging.Changed) }}#fab387{{ end }}",          
-            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#e78284{{ end }}",                  
-            "{{ if gt .Ahead 0 }}#8caaee{{ end }}",                                       
-            "{{ if gt .Behind 0 }}#ca9ee6{{ end }}"                                       
+            "{{ if and (.Working.Changed) (not .Staging.Changed) }}#fab387{{ end }}",
+            "{{ if and (.Staging.Changed) (not .Working.Changed) }}#eebebe{{ end }}",
+            "{{ if and (.Working.Changed) (.Staging.Changed) }}#fab387{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#e78284{{ end }}",
+            "{{ if gt .Ahead 0 }}#8caaee{{ end }}",
+            "{{ if gt .Behind 0 }}#ca9ee6{{ end }}"
           ],
           "foreground": "p:text",
           "leading_diamond": "\ue0b6",
@@ -113,7 +113,7 @@
           "type": "root"
         },
         {
-          "background": "#303446",
+          "background": "#fffa61",
           "foreground": "p:text",
           "properties": {
             "always_enabled": true
@@ -124,9 +124,7 @@
         },
         {
           "background": "p:green",
-          "background_templates": [
-            "{{ if gt .Code 0 }}#e78284{{ end }}"
-          ],
+          "background_templates": ["{{ if gt .Code 0 }}#e78284{{ end }}"],
           "foreground": "#ffffff",
           "properties": {
             "always_enabled": true
